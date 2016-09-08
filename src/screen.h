@@ -19,5 +19,17 @@ extern char kattr;
 #endif				/* __SCREEN__ */
 
 void scrollup(unsigned int);
+
 void putcar(uchar);
-void print(char*);
+
+void print(char *);
+
+void dump(uchar *, int);
+
+void move_cursor(u8, u8);
+
+void show_cursor(void);
+
+void hide_cursor(void);
+
+

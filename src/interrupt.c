@@ -1,5 +1,7 @@
 #include "types.h"
 #include "screen.h"
+#include "io.h"
+#include "kbd.h"
 
 void isr_default_int(void) {
     print("interrupt\n");
