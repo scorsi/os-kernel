@@ -3,7 +3,7 @@ CC=gcc -Wall -m32
 
 all: $(OBJ) 
 
-kernel: boot.o kernel.o screen.o lib.o gdt.o
+kernel: boot.o kernel.o screen.o lib.o gdt.o interrupt.o idt.o pic.o
 	ld -m elf_i386 -Ttext=100000 --entry=_start $^ -o $@
 
 boot.o: boot.asm
