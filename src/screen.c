@@ -1,4 +1,5 @@
 #include "types.h"
+#include "io.h"
 
 #define __SCREEN__
 
