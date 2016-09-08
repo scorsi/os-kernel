@@ -18,4 +18,3 @@ _asm_irq_1:
 	mov al,0x20
 	out 0x20,al
 	iret
-

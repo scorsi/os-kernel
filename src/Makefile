@@ -9,6 +9,9 @@ kernel: boot.o interrupt.asm kernel.o screen.o lib.o gdt.o interrupt.o idt.o pic
 boot.o: boot.asm
 	nasm -f elf32 -o $@ $^
 
+interrupt.o: interrupt.asm
+	nasm -f elf32 -o $@ $^
+
 .o: .c 
 	$(CC) -c $^
 
