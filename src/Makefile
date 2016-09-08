@@ -9,7 +9,7 @@ kernel: boot.o int.o kernel.o screen.o lib.o gdt.o interrupt.o idt.o pic.o
 boot.o: boot.asm
 	nasm -f elf32 -o $@ $^
 
-interrupt.o: interrupt.asm
+int.o: int.asm
 	nasm -f elf32 -o $@ $^
 
 .o: .c 
